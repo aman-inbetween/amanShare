@@ -1,0 +1,80 @@
+
+	//1. 2009: Created at google by Robert Griesemer, Rob Pike, and Ken Thompson and launched as an open-source programming language.
+	//2. Goals of the Go project were to eliminate the slowness and clumsiness of software development at Google.
+	//3. The language was designed by and for people who write and read and debug and maintain large software systems.
+	//4. Based on the best features from C, Pascal, and Oberon programming languages.
+	//5. 2015, The most significant release Golang 1.5 was presented.
+	//   - The compiler toolchain has been converted from C to Go entirely in this release.
+	//6. Big companies like Alibaba, Cloudflare, Docker, IBM, Firefox, BCC, YouTube, LinkedIn, Twitter, etc., use Golang
+	//7. Dropbox (over 500 million users) decided to migrate the performance-critical back-ends features from Python to GoLang.
+	//8. Platform targeted executable - build by setting the arguments 'GOOS' and 'GOARCH'
+
+
+	//1. Strong and statically typed
+	//2. Garbage collection
+	//3. Compiles to standalone binary(ur code + all external libs + go run time) = > resulting in one executable
+	//4. Fast compile time
+
+
+
+
+
+Some problems with existing languages:
+c/C++:
+- Complex type system,
+- longer compile times
+
+Python:
+- Interpreted, difficult to build huge enterprise level solutions
+
+
+
+
+----------------------------------------------------------
+Go:
+- Fast compile time
+- Garbage collected, BuiltIn
+- concurrency in built, no external libraries required
+- compiles to standalone binaries, no additional dependencies required at runtime
+- Targeted at building web applications
+
+----------------------------------------------------------
+Execution entryPoint:
+main function in the main package
+
+----------------------------------------------------------
+Installation
+> Donwload and install msi
+> setup Go workspace and Env variables
+> create a workspace anywhere on the system
+  - D:\gocode\myProj1\src
+  - D:\gocode\myProj1\bin
+  - D:\gocode\myProj1\pkj
+>Add the path to the workspace in env variables
+----------------------------------------------------------
+Starting to code
+1. Go to the workspace > project > src
+2. Open Command prompt
+
+>go version  //check version and installation
+
+> go env     //Check env variables, especially the value of GOPATH(should be your workspace)
+
+We can set following platorm specifc variables to generate executable for that platform(auto set if installed using go windows installer)
+> set GOOS=windows
+> set GOARCH=amd64
+
+----------------------------------------------------------
+compile and run
+To run directly on command line
+> go run <filename>.go
+
+Build executable
+> go build <filename>.go  //this will generate an executable with <filename>.executable
+
+
+
+
+
+
+
